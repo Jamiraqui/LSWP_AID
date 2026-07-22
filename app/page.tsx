@@ -61,7 +61,7 @@ export default function Home() {
         <div className="site-shell hero-content">
           <a className="wordmark" href="#top" aria-label="LSWP Aid home">
             <span className="wordmark-logo">
-              <img src="/images/student-success-center-logo.jpeg" alt="Student Success Center" />
+              <img src="/images/student-success-center-logo-white.png" alt="Student Success Center" />
             </span>
             <span>
               <strong>LSWP Aid</strong>
@@ -274,7 +274,7 @@ export default function Home() {
 
       <footer>
         <div className="site-shell footer-inner">
-          <a className="wordmark footer-wordmark" href="#top"><span className="wordmark-logo"><img src="/images/student-success-center-logo.jpeg" alt="Student Success Center" /></span><span><strong>LSWP Aid</strong><small>Lasallian Student Welfare Program</small></span></a>
+          <a className="wordmark footer-wordmark" href="#top"><span className="wordmark-logo"><img src="/images/student-success-center-logo-white.png" alt="Student Success Center" /></span><span><strong>LSWP Aid</strong><small>Lasallian Student Welfare Program</small></span></a>
           <p>For currently enrolled Lasallian students. Subject to the LSWP Guidelines and available funds.</p>
           <a href="#top" aria-label="Back to top" className="back-top"><ArrowDown size={18} aria-hidden="true" /></a>
         </div>

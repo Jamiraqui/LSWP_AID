@@ -44,8 +44,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-content { min-height: 750px; display: flex; flex-direction: column; padding: 30px 0 56px; }
 
 .wordmark { display: inline-flex; align-items: center; gap: 10px; width: fit-content; }
-.wordmark-logo { display: block; width: 104px; height: 56px; overflow: hidden; background: #fff; border-radius: 3px; }
-.wordmark-logo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 52%; }
+.wordmark-logo { display: block; width: 132px; height: 68px; }
+.wordmark-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .wordmark strong, .wordmark small { display: block; line-height: 1.15; }
 .wordmark strong { font-size: 16px; letter-spacing: 0; }
 .wordmark small { margin-top: 3px; font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; opacity: .84; }
@@ -183,7 +183,7 @@ footer { background: #102018; color: rgba(255,255,255,.8); }
   .hero-image { background-position: 65% center; }
   .hero::after { background: rgba(4, 34, 22, .55); }
   .hero-content { padding-top: 21px; padding-bottom: 34px; }
-  .wordmark-logo { width: 94px; height: 51px; }
+  .wordmark-logo { width: 112px; height: 58px; }
   .hero-copy { padding: 66px 0 45px; }
   h1 { font-size: 47px; }
   h2 { font-size: 34px; }
