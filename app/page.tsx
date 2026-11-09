@@ -20,6 +20,8 @@ import {
 
 const applicationFormUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLSeRBNplIPFlhRaIUao0wq9WydiV9Fj8xC_4VZg628U-agITfA/viewform?usp=header";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const assetUrl = (path: string) => basePath + path;
 
 const quickLinks = [
   ["What LSWP Aid is", "#about"],
@@ -57,11 +59,16 @@ export default function Home() {
   return (
     <main>
       <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-image" role="img" aria-label="Students walking together on campus" />
+        <div
+          className="hero-image"
+          role="img"
+          aria-label="Students walking together on campus"
+          style={{ backgroundImage: 'url("' + assetUrl("/images/lswp-students-hero.png") + '")' }}
+        />
         <div className="site-shell hero-content">
           <a className="wordmark" href="#top" aria-label="LSWP Aid home">
             <span className="wordmark-logo">
-              <img src="/images/student-success-center-logo-white.png" alt="Student Success Center" />
+              <img src={assetUrl("/images/student-success-center-logo-white.png")} alt="Student Success Center" />
             </span>
             <span>
               <strong>LSWP Aid</strong>
@@ -221,7 +228,7 @@ export default function Home() {
             <p className="card-kicker">Application letter template</p>
             <h3>Use this guide to write a clear request.</h3>
             <p>It includes the key details the Committee needs, plus the certification section used after a decision.</p>
-            <a className="button button-dark" href="/downloads/LSWP-Application-Letter-Template.docx" download>
+            <a className="button button-dark" href={assetUrl("/downloads/LSWP-Application-Letter-Template.docx")} download>
               Download application letter <ArrowDown size={18} aria-hidden="true" />
             </a>
             <a className="text-link" href={applicationFormUrl} target="_blank" rel="noreferrer">Open the application form <ArrowUpRight size={16} aria-hidden="true" /></a>
@@ -274,7 +281,7 @@ export default function Home() {
 
       <footer>
         <div className="site-shell footer-inner">
-          <a className="wordmark footer-wordmark" href="#top"><span className="wordmark-logo"><img src="/images/student-success-center-logo-white.png" alt="Student Success Center" /></span><span><strong>LSWP Aid</strong><small>Lasallian Student Welfare Program</small></span></a>
+          <a className="wordmark footer-wordmark" href="#top"><span className="wordmark-logo"><img src={assetUrl("/images/student-success-center-logo-white.png")} alt="Student Success Center" /></span><span><strong>LSWP Aid</strong><small>Lasallian Student Welfare Program</small></span></a>
           <p>For currently enrolled Lasallian students. Subject to the LSWP Guidelines and available funds.</p>
           <a href="#top" aria-label="Back to top" className="back-top"><ArrowDown size={18} aria-hidden="true" /></a>
         </div>
